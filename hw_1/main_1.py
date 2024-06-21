@@ -12,7 +12,7 @@ def input_number(massage: str) -> float:
         return  default_number
 
 
-# region Task_1
+# Task_1
 def quadratic_equation() -> None:
     print("Введите коэффициенты a, b и c для уравнения ax^2 + bx + c = 0")
     a = input_number("Коэффициент a: ")
@@ -42,10 +42,9 @@ def calculate_roots(a: float, b: float, discriminant: float):
         print(f"Корень уравнения: {root}")
     else:
         print("У уравнения нет действительных корней")
-# endregion
 
 
-# region Task_2
+# Task_2
 def triangle_area() -> None:
     print("Введите длины сторон треугольника a, b и c:")
     a = input_number("Сторона a: ")
@@ -77,10 +76,7 @@ def calculate_area(a: float, b: float, c: float, half_perimetr: float) -> float:
     return area
 
 
-# endregion
-
-
-# region Task_3
+# Task_3
 def temperature_conversion():
     print("Выберите опцию: ")
     print("1. Конвертировать Цельсий в Фаренгейт")
@@ -105,8 +101,6 @@ def convert_to_celsius():
     fahrenheit = input_number("Введите температуру в градусах Фаренгейта: ")
     celsius = (fahrenheit - 32) * (5.0 / 9.0)
     print(f"Температура в градусах Цельсия: {celsius}")
-
-# endregion
 
 
 class Program:
