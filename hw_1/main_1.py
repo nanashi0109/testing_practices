@@ -3,12 +3,13 @@ from math import sqrt
 
 def input_number(massage: str) -> float:
     number = input(massage)
-
+    default_number = 1
     try:
         number = float(number)
         return number
     except ValueError:
-        print("Невозможно преобразовать в число")
+        print(f"Невозможно преобразовать в число! Будет возвращено значение по умолчанию: {default_number}")
+        return  default_number
 
 
 # region Task_1
