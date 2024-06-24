@@ -1,5 +1,5 @@
 import pytest
-from src.main_2 import average
+from hw_2.src.main_2 import average
 
 
 @pytest.mark.parametrize("value, expected_result",
