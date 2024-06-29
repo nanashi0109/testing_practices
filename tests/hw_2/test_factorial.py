@@ -1,5 +1,5 @@
 import pytest
-from hw_2.src.main_2 import factorial
+from src.hw_2.main_2 import factorial
 
 
 @pytest.mark.parametrize("value, expected_result",
