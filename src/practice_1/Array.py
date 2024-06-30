@@ -6,6 +6,9 @@ class Array:
     def sum(self) -> float:
         summa = 0
 
+        if not isinstance(self.array, list):
+            raise TypeError
+
         if not self.array:
             return None
 
@@ -17,6 +20,9 @@ class Array:
     def multiply(self) -> float:
         multiply = 1
 
+        if not isinstance(self.array, list):
+            raise TypeError
+
         if not self.array:
             return None
 
@@ -26,6 +32,9 @@ class Array:
         return multiply
 
     def average(self) -> float:
+        if not isinstance(self.array, list):
+            raise TypeError
+
         if not self.array:
             return None
 

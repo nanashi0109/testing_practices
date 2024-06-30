@@ -24,7 +24,7 @@ def test_sum_positive(value_array, expend_result):
                              (None, pytest.raises(TypeError)),
                              (["123", True, None], pytest.raises(TypeError))
                          ])
-def test_sum_positive(value_array, expend_result):
+def test_sum_negative(value_array, expend_result):
     arr = Array(value_array)
 
     with expend_result:
@@ -37,7 +37,7 @@ def test_sum_positive(value_array, expend_result):
                              ([], None),
                              ([i for i in range(5000)], 12497500)
                          ])
-def test_sum_positive(value_array, expend_result):
+def test_sum_boundary(value_array, expend_result):
     arr = Array(value_array)
 
     assert arr.sum() == expend_result

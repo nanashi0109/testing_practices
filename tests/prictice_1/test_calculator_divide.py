@@ -21,7 +21,7 @@ def precondition(scope="session"):
                              (-10, -2, 5),
                              (-5, 2.5, -2)
                          ])
-def test_multiply_positive(value_left, value_right, expend_result, precondition):
+def test_divide_positive(value_left, value_right, expend_result, precondition):
     global calculator
 
     assert calculator.divide(value_left, value_right) == expend_result
@@ -34,7 +34,7 @@ def test_multiply_positive(value_left, value_right, expend_result, precondition)
                              (5, 5, 1),
                              (0, 54, 0)
                          ])
-def test_multiply_boundary(value_left, value_right, expend_result, precondition):
+def test_divide_boundary(value_left, value_right, expend_result, precondition):
     global calculator
 
     assert calculator.divide(value_left, value_right) == expend_result
@@ -46,7 +46,7 @@ def test_multiply_boundary(value_left, value_right, expend_result, precondition)
                              ("str_1", "str_2", pytest.raises(TypeError)),
                              (5, 0, pytest.raises(ValueError)),
                          ])
-def test_multiply_negative(value_left, value_right, expend_result, precondition):
+def test_divide_negative(value_left, value_right, expend_result, precondition):
     global calculator
     with expend_result:
         assert calculator.divide(value_left, value_right) == expend_result
